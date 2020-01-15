@@ -2,7 +2,9 @@ import string
 import os
 import board
 import player
-from points.point import Point
+from point import Point
+
+"""A set of functions needed to control the game and take input from user"""
 
 
 def create_board():

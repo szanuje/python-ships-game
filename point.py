@@ -2,6 +2,7 @@ import math
 
 
 class Point:
+    """Class represent a point"""
 
     def __init__(self, x, y):
         self.x = x
@@ -18,7 +19,6 @@ class Point:
 
     def __ne__(self, other):
         return not self == other
-
 
     def __add__(self, other):
         return Point(self.x + other.x, self.y + other.y)

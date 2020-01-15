@@ -5,12 +5,11 @@ import time
 import board
 import game_controller
 import player
-from points.point import Point
+from point import Point
 
-
-# PLAYER VS PLAYER SIMULATION BY COMPUTER
 
 def run_game(board_size):
+    """PLAYER VS PLAYER SIMULATION BY COMPUTER"""
     player1_board = board.Board(board_size)
     player2_board = board.Board(board_size)
     player1_obj = player.Player(player1_board, "Player1")

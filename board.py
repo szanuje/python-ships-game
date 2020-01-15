@@ -2,10 +2,11 @@ import string
 from random import randint
 
 import ship
-from points.point import Point
+from point import Point
 
 
 class Board:
+    """Class represent a board of ships"""
 
     def __init__(self, size):
 
