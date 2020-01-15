@@ -11,6 +11,7 @@ class Player:
         self.targets = [[" " for x in range(self.board.size)] for y in range(self.board.size)]
 
     def shoot(self, enemy_board, x, y):
+        """:returns true - if hit, false - if missed"""
         hit = False
         if enemy_board.board[x][y] == "|" or enemy_board.board[x][y] == "-":
             for type_of_ship in enemy_board.ships:  # iterate over types of ships

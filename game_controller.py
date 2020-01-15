@@ -8,6 +8,7 @@ from point import Point
 
 
 def create_board():
+    """ :returns two boards for players"""
     while True:
         try:
             board_size = int(input("Choose size of the board: "))
@@ -20,11 +21,13 @@ def create_board():
 
 
 def create_player(player_board):
+    """ :returns a player with board connected to him"""
     name = str(input("Chose player name: "))
     return player.Player(player_board, name)
 
 
 def place_ships(my_player):
+    """ place ships, automatically lub manually"""
     print(my_player.nickname + ", do you want to place your ships manually, or automatically?\nAuto-placing ships is "
                                "available when board is bigger than 9")
     print("(1) manual / (2) auto")
@@ -121,6 +124,7 @@ def is_game_finished(player1, player2):
 
 
 def clear():
+    """ clear console"""
     if os.name == 'nt':
         _ = os.system('cls')
     else:

@@ -5,4 +5,5 @@ class Ship:
         self.masts = []
 
     def num_of_masts(self):
+        """:returns len of masts list"""
         return len(self.masts)

@@ -22,8 +22,8 @@ class Board:
             "1 Masted Ship": []
         }
 
-    #  generate point and place ship
     def auto_place_many_masted_ship(self, n_of_masts):
+        """ :returns a board with placed ships"""
         vertical = 1
         horizontal = 0
         draw = randint(0, 1)  # decide whether ship will be placed horizontal or vertical
@@ -67,7 +67,6 @@ class Board:
 
         return self
 
-    #  generate point and check if space around is empty
     def auto_place_one_masted_ship(self):
         one_masted_ship = ship.Ship()
         while True:
@@ -88,8 +87,8 @@ class Board:
 
         return self
 
-    # give 2 points - corner masts, and give number of masts for validation
     def manual_place_many_masted_ship(self, point1, point2, n_of_masts):
+        """ Place a ship with between given points"""
 
         if n_of_masts < 2:
             print("Number of masts must be grater than 1")
